@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 39 100% 96%;
+    --foreground: 340 74% 17%;
+
+    --card: 39 100% 96%;
+    --card-foreground: 340 74% 17%;
+
+    --popover: 39 100% 96%;
+    --popover-foreground: 340 74% 17%;
+
+    --primary: 350 100% 67%;
+    --primary-foreground: 39 100% 96%;
+
+    --secondary: 15 100% 77%;
+    --secondary-foreground: 340 74% 17%;
+
+    --muted: 350 100% 95%;
+    --muted-foreground: 340 74% 40%;
+
+    --accent: 15 100% 77%;
+    --accent-foreground: 340 74% 17%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 39 100% 96%;
+
+    --border: 350 100% 90%;
+    --input: 350 100% 90%;
+    --ring: 350 100% 67%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 340 30% 10%;
+    --foreground: 39 100% 96%;
+
+    --card: 340 30% 15%;
+    --card-foreground: 39 100% 96%;
+
+    --popover: 340 30% 15%;
+    --popover-foreground: 39 100% 96%;
+
+    --primary: 350 100% 67%;
+    --primary-foreground: 39 100% 96%;
+
+    --secondary: 15 100% 77%;
+    --secondary-foreground: 340 74% 17%;
+
+    --muted: 340 30% 20%;
+    --muted-foreground: 39 100% 80%;
+
+    --accent: 15 100% 77%;
+    --accent-foreground: 340 74% 17%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 39 100% 96%;
+
+    --border: 340 30% 25%;
+    --input: 340 30% 25%;
+    --ring: 350 100% 67%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-ubuntu transition-colors duration-300;
+  }
+
+  .time-display {
+    @apply font-karla;
+  }
+}
+
+/* Color theme variations */
+.theme-blue {
+  --primary: 210 100% 67%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 200 100% 77%;
+  --accent: 200 100% 77%;
+  --muted: 210 100% 95%;
+  --border: 210 100% 90%;
+  --ring: 210 100% 67%;
+}
+
+.theme-purple {
+  --primary: 270 100% 67%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 260 100% 77%;
+  --accent: 260 100% 77%;
+  --muted: 270 100% 95%;
+  --border: 270 100% 90%;
+  --ring: 270 100% 67%;
+}
+
+.theme-green {
+  --primary: 120 60% 60%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 100 70% 77%;
+  --accent: 100 70% 77%;
+  --muted: 120 60% 95%;
+  --border: 120 60% 90%;
+  --ring: 120 60% 60%;
+}
+
+/* Thematic designs */
+.theme-night-sky {
+  --background: 240 70% 10%;
+  --foreground: 220 30% 90%;
+  --card: 240 70% 15%;
+  --card-foreground: 220 30% 90%;
+  --popover: 240 70% 15%;
+  --popover-foreground: 220 30% 90%;
+  --primary: 220 100% 70%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 260 70% 70%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 240 70% 20%;
+  --muted-foreground: 220 30% 80%;
+  --accent: 260 70% 70%;
+  --accent-foreground: 0 0% 100%;
+  --border: 240 70% 20%;
+  --input: 240 70% 20%;
+  --ring: 220 100% 70%;
+}
+
+.theme-ocean {
+  --background: 200 70% 95%;
+  --foreground: 200 70% 20%;
+  --card: 200 70% 90%;
+  --card-foreground: 200 70% 20%;
+  --popover: 200 70% 90%;
+  --popover-foreground: 200 70% 20%;
+  --primary: 200 100% 50%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 180 70% 60%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 200 70% 85%;
+  --muted-foreground: 200 70% 40%;
+  --accent: 180 70% 60%;
+  --accent-foreground: 0 0% 100%;
+  --border: 200 70% 85%;
+  --input: 200 70% 85%;
+  --ring: 200 100% 50%;
+}
+
+.theme-sunflower {
+  --background: 40 100% 95%;
+  --foreground: 30 80% 20%;
+  --card: 40 100% 90%;
+  --card-foreground: 30 80% 20%;
+  --popover: 40 100% 90%;
+  --popover-foreground: 30 80% 20%;
+  --primary: 40 100% 50%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 30 100% 60%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 40 100% 85%;
+  --muted-foreground: 30 80% 40%;
+  --accent: 30 100% 60%;
+  --accent-foreground: 0 0% 100%;
+  --border: 40 100% 85%;
+  --input: 40 100% 85%;
+  --ring: 40 100% 50%;
+}
+
